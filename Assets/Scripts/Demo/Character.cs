@@ -10,6 +10,8 @@ namespace LifeTest
         public Charisma cha = new Charisma();
         public Luck luck = new Luck();
         Random rnd = new Random();
+        public List<Item> inventory = new List<Item>();
+        
 
         public virtual void MakeValues() {
             intel.Initialize(rnd.Next(5, (maxPointPool / 4) + 4));
