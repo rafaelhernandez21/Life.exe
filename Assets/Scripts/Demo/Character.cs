@@ -10,7 +10,7 @@ namespace LifeTest
         public Charisma cha = new Charisma();
         public Luck luck = new Luck();
         Random rnd = new Random();
-        public List<Item> inventory = new List<Item>();
+        public Inventory inv;
         
 
         public virtual void MakeValues() {
