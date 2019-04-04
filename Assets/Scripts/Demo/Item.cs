@@ -8,6 +8,7 @@ namespace LifeTest
         public int value;
         public enum ItemType { food, tool, armor, misc};
         public ItemType itemType;
+        public Character owner;
 
        
     }
