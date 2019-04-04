@@ -2,7 +2,7 @@ using System;
 using System.Collections;
 using System.Collections.Generic;
 
-namespace Life {
+namespace LifeTest {
   public class Reputation {
     public int trust;
     public int fear;
