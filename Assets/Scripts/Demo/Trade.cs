@@ -7,6 +7,10 @@ namespace LifeTest{
 //bad trades lower reputations
 //giving a person something poisonous or dangerous can increase fear, adds to clout 
 //good trades increase trust
-
+public class Trade {
+  public void VerifyTrade(Item i1, Item i2){
+    
+  }
+}
 
 }
