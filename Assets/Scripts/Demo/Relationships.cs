@@ -6,24 +6,24 @@ namespace LifeTest{
   public class Relationships{
     public List<Relationship> peeps = List<Relationship>();
     
-    public void AddPerson(Character char, int liking){
+    public void AddPerson(Character char, int initialTrust, int initialFear){
       //if(!peeps.Contains(Char)){
         //peeps.Add(char);
       //}
-    }
-    
-    public void ChangeReputation(){
-    
-    }
-   
-    
+      
+      Reputation rep = new Reputation(initialTrust, initialFear);
+      Relationship rel = new Relationship(char, rep, (initialTrust+initialFear)/2);
+      peeps.Add(rel);
+    }   
   }
   
   public class Relationship{
     Character person;
+    Reputation rep;
     int clout;
-    public Relationship(Character p, int c){
+    public Relationship(Character p, Reputation r, int c){
       person = p;
+      rep = r;
       clout = c;
     }
   }
