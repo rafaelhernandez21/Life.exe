@@ -21,5 +21,13 @@ namespace Life {
         nullRelationship = true;
       }
     }
+  public Reputation (int t, int f){
+    trust = t;
+    fear = f;
   }
+    
+  
+  }
+  
+
 } 
